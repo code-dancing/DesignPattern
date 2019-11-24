@@ -3,7 +3,7 @@ package com.codedancing.designpattern.creational.singleton;
 /**
  * 第四种形式：懒汉式 - 单线程
  *
- * 线程不安全（适用于单线程）
+ * 线程不安全
  */
 public class Singleton04 {
 

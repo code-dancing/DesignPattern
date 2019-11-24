@@ -26,11 +26,4 @@ public class Singleton03 {
 
     private Singleton03(String initialInfo) { this.initialInfo = initialInfo; }
 
-    @Override
-    public String toString() {
-        return "Singleton03{" +
-                "initialInfo='" + initialInfo + '\'' +
-                '}';
-    }
-
 }
