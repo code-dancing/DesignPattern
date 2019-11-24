@@ -1,4 +1,4 @@
-package com.codedancing.designpattern.creational.factory.simplefactory;
+package com.codedancing.designpattern.creational.factorymethod.simplefactory;
 
 /**
  * 简单工厂类
@@ -9,15 +9,15 @@ public class SimpleFactory {
         Pizza pizza;
 
         switch (pizzaName) {
-            case "PepperPizza" :
+            case "PepperPizza":
                 pizza = new PepperPizza();
                 pizza.setPizzaName("胡椒风味披萨");
                 return pizza;
-            case "GreekPizza" :
+            case "GreekPizza":
                 pizza = new GreekPizza();
                 pizza.setPizzaName("希腊风味披萨");
                 return pizza;
-            case "CheesePizza" :
+            case "CheesePizza":
                 pizza = new CheesePizza();
                 pizza.setPizzaName("芝士风味披萨");
                 return pizza;

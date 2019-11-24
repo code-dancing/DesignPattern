@@ -1,4 +1,4 @@
-package com.codedancing.designpattern.creational.factory.simplefactory;
+package com.codedancing.designpattern.creational.factorymethod.simplefactory;
 
 /**
  * Pizza 抽象类

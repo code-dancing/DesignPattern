@@ -1,4 +1,4 @@
-package com.codedancing.designpattern.creational.factory.simplefactory;
+package com.codedancing.designpattern.creational.factorymethod.simplefactory;
 
 /**
  * 希腊风味披萨
