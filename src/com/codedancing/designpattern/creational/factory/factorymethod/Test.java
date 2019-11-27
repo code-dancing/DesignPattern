@@ -1,4 +1,4 @@
-package com.codedancing.designpattern.creational.factorymethod.factory;
+package com.codedancing.designpattern.creational.factory.factorymethod;
 
 public class Test {
 

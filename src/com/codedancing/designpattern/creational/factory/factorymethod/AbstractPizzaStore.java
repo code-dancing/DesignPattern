@@ -1,6 +1,6 @@
-package com.codedancing.designpattern.creational.factorymethod.factory;
+package com.codedancing.designpattern.creational.factory.factorymethod;
 
-import com.codedancing.designpattern.creational.factorymethod.simplefactory.Pizza;
+import com.codedancing.designpattern.creational.factory.simplefactory.Pizza;
 
 import java.io.BufferedReader;
 import java.io.IOException;
