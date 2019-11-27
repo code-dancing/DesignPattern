@@ -1,4 +1,4 @@
-package com.codedancing.designpattern.creational.factorymethod.simplefactory;
+package com.codedancing.designpattern.creational.factory.simplefactory;
 
 /**
  * Pizza 抽象类
@@ -6,9 +6,9 @@ package com.codedancing.designpattern.creational.factorymethod.simplefactory;
 public abstract class Pizza {
 
     /**
-     * 披萨名称
+     * 披萨类型
      */
-    protected String pizzaName;
+    protected String pizzaType;
 
     /**
      * 准备原材料, 不同的披萨不一样，做成抽象方法
@@ -19,25 +19,25 @@ public abstract class Pizza {
      * 烘烤
      */
     public void bake() {
-        System.out.println(pizzaName + "baking...");
+        System.out.println(pizzaType + "baking...");
     }
 
     /**
      * 切块
      */
     public void cut() {
-        System.out.println(pizzaName + "cutting...");
+        System.out.println(pizzaType + "cutting...");
     }
 
     /**
      * 包装
      */
     public void box() {
-        System.out.println(pizzaName + "boxing...");
+        System.out.println(pizzaType + "boxing...");
     }
 
-    public void setPizzaName(String pizzaName) {
-        this.pizzaName = pizzaName;
+    public void setPizzaType(String pizzaType) {
+        this.pizzaType = pizzaType;
     }
 
 }

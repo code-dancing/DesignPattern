@@ -7,26 +7,28 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * 披萨订单处理（抽象）
+ * 披萨商店（抽象）
  */
-public abstract class AbstractPizzaOrder {
+public abstract class AbstractPizzaStore {
 
     private static final BufferedReader READER = new BufferedReader(new InputStreamReader(System.in));
 
     /**
-     * 定义抽象方法createPizza, 让各个工厂子类自己实现
+     * 定义抽象方法createPizza, 让各个工厂子类自己实现当地的特色风味披萨
      */
     protected abstract Pizza createPizza(String pizzaType);
 
     /**
-     * 交付披萨工厂生产
+     * 披萨制作流程，所有的加盟店都需要遵守
      */
-    protected void process() {
+    protected final void orderPizza() {
         String pizzaType;
         Pizza pizza;
         do {
             pizzaType = getType();
+            // 顾客决定工厂，子类工厂决定披萨，解耦！解耦！解耦！
             pizza = createPizza(pizzaType);
+
             if (pizza != null) {
                 pizza.prepare();
                 pizza.bake();

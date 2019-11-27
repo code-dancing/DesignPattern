@@ -1,16 +1,16 @@
 package com.codedancing.designpattern.creational.factorymethod.factory;
 
-public class PizzaStore {
+public class Test {
 
     public static void main(String[] args) {
         System.out.println("使用工厂模式 -->");
 
         // 开始营业
-//        BJPizzaOrder bjPizzaOrder = new BJPizzaOrder();
-//        bjPizzaOrder.process();
+//        BJPizzaStore pizzaStore = new BJPizzaStore();
+//        pizzaStore.process();
 
-        LDPizzaOrder ldPizzaOrder = new LDPizzaOrder();
-        ldPizzaOrder.process();
+        LDPizzaStore pizzaStore = new LDPizzaStore();
+        pizzaStore.orderPizza();
 
     }
 

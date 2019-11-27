@@ -1,25 +1,35 @@
-package com.codedancing.designpattern.creational.factorymethod.simplefactory;
+package com.codedancing.designpattern.creational.factory.simplefactory;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * 披萨订单处理
+ * 披萨商店
  */
-public class PizzaOrder {
+public class PizzaStore {
 
     private static final BufferedReader READER = new BufferedReader(new InputStreamReader(System.in));
 
     /**
-     * 交付披萨工厂生产
+     * 给披萨商店供货的披萨工厂
      */
-    public static void process() {
+    private SimplePizzaFactory factory;
+
+    public PizzaStore(SimplePizzaFactory factory) {
+        this.factory = factory;
+    }
+
+    /**
+     * 披萨制作流程
+     */
+    public void orderPizza() {
         String pizzaType;
         Pizza pizza;
         do {
             pizzaType = getType();
-            pizza = SimpleFactory.createPizza(pizzaType);
+            // 使用简单工厂创建实例，解耦！解耦！解耦！
+            pizza = this.factory.createPizza(pizzaType);
 
             if (pizza != null) {
                 pizza.prepare();

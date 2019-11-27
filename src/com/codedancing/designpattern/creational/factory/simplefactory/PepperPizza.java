@@ -1,4 +1,4 @@
-package com.codedancing.designpattern.creational.factorymethod.simplefactory;
+package com.codedancing.designpattern.creational.factory.simplefactory;
 
 /**
  * 胡椒风味披萨
