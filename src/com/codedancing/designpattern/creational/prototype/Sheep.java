@@ -1,9 +1,11 @@
 package com.codedancing.designpattern.creational.prototype;
 
+import java.io.Serializable;
+
 /**
  * 羊，实现了Cloneable接口
  */
-public class Sheep implements Cloneable {
+public class Sheep implements Cloneable, Serializable {
 
     /**
      * 羊的名字
@@ -60,6 +62,8 @@ public class Sheep implements Cloneable {
 
         try {
             sheep = (Sheep) super.clone();
+            // 深度克隆
+            // sheep.mother = this.mother == null ? null : (Sheep) this.mother.clone();
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }
