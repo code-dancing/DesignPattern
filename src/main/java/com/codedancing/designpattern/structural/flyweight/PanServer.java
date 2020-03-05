@@ -28,7 +28,7 @@ public class PanServer {
     /**
      * 文件上传位置
      */
-    private final String DEST_FILEPATH = Thread.currentThread().getContextClassLoader().getResource("").getPath() + "com/codedancing/designpattern/structural/flyweight/files/";
+    private final String DEST_FILEPATH = Thread.currentThread().getContextClassLoader().getResource("").getPath() + "main/com/codedancing/designpattern/structural/flyweight/files/";
 
     private PanServer() {
         resourceSystem = new HashMap<>();
