@@ -1,4 +1,4 @@
-package com.codedancing.designpattern.structural.proxy.dynamic.gclib;
+package com.codedancing.designpattern.structural.proxy.dynamic.cglib;
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;

@@ -1,4 +1,4 @@
-package com.codedancing.designpattern.structural.proxy.dynamic.gclib;
+package com.codedancing.designpattern.structural.proxy.dynamic.cglib;
 
 public class Client {
 

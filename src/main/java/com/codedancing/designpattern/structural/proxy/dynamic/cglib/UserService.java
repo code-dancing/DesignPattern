@@ -1,4 +1,4 @@
-package com.codedancing.designpattern.structural.proxy.dynamic.gclib;
+package com.codedancing.designpattern.structural.proxy.dynamic.cglib;
 
 /**
  * 目标对象,没有实现任何接口
