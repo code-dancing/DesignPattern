@@ -29,11 +29,11 @@ public class LogHandler implements InvocationHandler {
     }
 
     private void before() {
-        System.out.println(String.format("start time： %s", System.currentTimeMillis()));
+        System.out.println(String.format("task start time： %s", System.currentTimeMillis()));
     }
 
     private void after() {
-        System.out.println(String.format("end time： %s", System.currentTimeMillis()));
+        System.out.println(String.format("task end time： %s", System.currentTimeMillis()));
     }
 
 }

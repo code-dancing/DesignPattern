@@ -26,13 +26,13 @@ public class Client {
 
 
         // Java8
-        UserService proxyInstance1 = (UserService) Proxy.newProxyInstance(Client.class.getClassLoader(), new Class[]{UserService.class},
+        UserService proxyInstance1 = (UserService) Proxy.newProxyInstance(UserService.class.getClassLoader(), new Class[]{UserService.class},
                 (proxy, method, args1) -> {
-                    System.out.println(String.format("start time： %s", System.currentTimeMillis()));
+                    System.out.println(String.format("task start time： %s", System.currentTimeMillis()));
                     try {
                         return method.invoke(userService, args1);
                     } finally {
-                        System.out.println(String.format("end time： %s", System.currentTimeMillis()));
+                        System.out.println(String.format("task end time： %s", System.currentTimeMillis()));
                     }
                 }
         );
