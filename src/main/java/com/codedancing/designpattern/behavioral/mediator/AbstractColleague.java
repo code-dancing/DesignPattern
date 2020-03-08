@@ -3,6 +3,7 @@ package com.codedancing.designpattern.behavioral.mediator;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Objects;
 
 /**
  * 抽象同事类
@@ -46,6 +47,20 @@ public abstract class AbstractColleague {
 
     public String getUsername() {
         return username;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        AbstractColleague that = (AbstractColleague) o;
+        return Objects.equals(mediator, that.mediator) &&
+                Objects.equals(username, that.username);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(mediator, username);
     }
 
     /**
