@@ -21,14 +21,18 @@ public abstract class AbstractUPSubject {
      * 粉丝订阅
      */
     public void addFan(FansObserver observer) {
-        fans.add(Optional.of(observer).get());
+        if (observer != null) {
+            fans.add(observer);
+        }
     }
 
     /**
      * 粉丝退订
      */
     public void removeFan(FansObserver observer) {
-        fans.remove(Optional.of(observer).get());
+        if (observer != null) {
+            fans.remove(observer);
+        }
     }
 
     /**
