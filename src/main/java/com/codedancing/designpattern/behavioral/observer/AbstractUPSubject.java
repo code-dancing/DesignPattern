@@ -2,7 +2,6 @@ package com.codedancing.designpattern.behavioral.observer;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 /**
  * UP主，相当于抽象主题
