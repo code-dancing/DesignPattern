@@ -21,10 +21,11 @@ public class WasherContext {
      */
     private WasherState washerState;
 
-    public WasherContext(String washingMode) {
+    public WasherContext(WasherState washerState, String washingMode) {
         if (AUTO_MODE.equals(washingMode)) {
             isAUTO = true;
         }
+        this.washerState = washerState;
         System.out.println("您已将洗涤模式设置为：" + washingMode);
     }
 
